@@ -5,8 +5,8 @@ deployment:
   dockerhub:
     branch: master
     commands:
-      - curl -X POST -H 'Content-Type:application/json' --data '{"build":true}' "https://registry.hub.docker.com/u/srimant/docker-test/trigger/f32dfb3d-594a-421b-a2c1-0231a7b70a55/"
-
+#      - curl -X POST -H 'Content-Type:application/json' --data '{"build":true}' "https://registry.hub.docker.com/u/srimant/docker-test/trigger/f32dfb3d-594a-421b-a2c1-0231a7b70a55/"
+	   - $DOCKER_HUB_TRIGGER
 
 
 
