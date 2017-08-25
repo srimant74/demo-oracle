@@ -5,9 +5,7 @@ deployment:
   dockerhub:
     branch: master
     commands:
-       curl -H "Content-Type: application/json" --data '{"build": true}' -X POST https://registry.hub.docker.com/u/srimant/srimant-cci/trigger/40e2c0c0-c7ee-44eb-ad06-d1ef62253c7a/
-
-
+      - curl -X POST -H 'Content-Type:application/json' --data '{"build":true}' "https://registry.hub.docker.com/u/srimant/srimant-cci/trigger/40e2c0c0-c7ee-44eb-ad06-d1ef62253c7a/"
 test:
   override:     
     - mocha
