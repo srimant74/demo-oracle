@@ -1,11 +1,8 @@
-# The deployment section should be excluded until
-# it is explicitly included in module 5
-
 deployment:
   dockerhub:
     branch: master
     commands:
-      - curl -X POST -H 'Content-Type:application/json' --data '{"build":true}' "https://registry.hub.docker.com/u/srimant/ddemo-ci/trigger/4301f707-07e9-44a8-8131-01accbc715d6/"	  
+#      - curl -X POST -H 'Content-Type:application/json' --data '{"build":true}' "https://registry.hub.docker.com/u/srimant/ddemo-ci/trigger/4301f707-07e9-44a8-8131-01accbc715d6/"	  
 test:
   override:     
     - mocha
