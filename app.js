@@ -10,7 +10,7 @@ app.set('views', 'views');
 app.set('view engine', 'jade');
 
 var data = {
-	name: "Srimant Mishra",
+	name: "Srimant Misra",
 	company: "Oracle India Pvt Ltd"
 }
 
