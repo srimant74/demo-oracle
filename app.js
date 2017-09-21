@@ -11,7 +11,7 @@ app.set('view engine', 'jade');
 
 var data = {
 	name: "Srimant Misra",
-	company: "Oracle India Pvt Ltd"
+	company: "Oracle India Private Ltd"
 }
 
 app.get('/', function(req, res) {
